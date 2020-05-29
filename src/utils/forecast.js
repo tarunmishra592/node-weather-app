@@ -9,7 +9,7 @@ const forcase = (latitute, longitute, callback) => {
         callback('Unable to find location!', undefined);
       } else {
         const data = body;
-        callback(undefined, `${data.current.weather_descriptions[0]}. It is currentely ${data.current.temperature} degree out. Thsre is ${data.current.precip} chance of rain`);
+        callback(undefined, `${data.current.weather_descriptions[0]}. It is currently ${data.current.temperature} degree out. There is ${data.current.precip} chance of rain`);
       }
   })
 }
